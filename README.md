@@ -15,3 +15,7 @@ Graph for mean average precision
 ![image](https://github.com/user-attachments/assets/591f3b9b-6f61-48f7-8576-090bf3a0d8a9)
 ![image](https://github.com/user-attachments/assets/6402fd92-8cb4-4f64-a74f-0c6e2cf9c095)
 Action detected accurately in dense environment
+
+
+Methodology:
+This action recognition system in the classroom is based on an enhanced YOLOv7 model with Bi-Level Routing Attention (BRA) for better detection accuracy in dense and dynamic classroom environments. The dataset is structured into individual folders and a data.yaml file specifies the class names and paths. For supporting the custom attention mechanism, required files such as biformer.py, common.py, and yolo.py are included and modified. Pre-trained YOLOv7 weights are employed and the model is subsequently trained for 15 epochs with a batch size of 16. Once trained, the best-performing model is utilized to identify actions on validation and training images. The results are visualized, and performance metrics like mAP, precision, and recall are gathered to analyze how well the system identifies actions.
